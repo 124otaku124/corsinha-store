@@ -1,11 +1,9 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificado com Sucesso</title>
-
     <style>
         body, html {
             margin: 0;
@@ -15,15 +13,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #1a1a1d;
-            font-family: Arial, sans-serif;
         }
 
         .bg {
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: url('https://cdn.discordapp.com/attachments/1194392102596001914/1293708832924635177/image0.jpg?ex=67085bbd&is=67070a3d&hm=d45b628d762d2e4408899a2aa0b2a596f36059cc77fddf1e880c7b80d97e2455&');
+            background-image: url('https://cdn.discordapp.com/banners/1256646095329693839/3a2f7e95085ffcf6a6f6993ca3423354.png?size=2048');
             background-size: cover;
             filter: blur(8px);
             -webkit-filter: blur(8px);
@@ -35,29 +31,58 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
+            flex-direction: column; /* Alteração: para colocar os elementos em coluna */
+            min-height: 100vh; 
         }
 
         .center-box {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.5);
             padding: 40px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             width: 90%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px; 
         }
+
+        .success-box {
+            background: rgba(0, 128, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .success-box img {
+            width: 50px; 
+            margin-right: 15px; 
+            border-radius: 50%; 
+        }
+        .success-box .text {
+            text-align: left; 
+        }
+
+        .success-box h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .success-box p {
+            margin: 5px 0 0;
+            font-size: 1em;
+        }
+
+
 
         .center-box h1 {
             font-size: 1.9em;
             margin-bottom: 0.1em;
             color: #fff;
-            font-weight: bold;
         }
 
         .center-box .subtitle {
@@ -66,25 +91,31 @@
             color: #fff;
         }
 
+        .center-box .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 1em;
+            border-radius: 50%;
+        }
+
         .center-box .cta-button {
             padding: 12px 100px;
             font-size: 1.3em;
             color: white;
-            background-color: #d32f2f;
+            background-color: #008631;
             border: none;
             border-radius: 30px;
             cursor: pointer;
             transition: background-color 0.3s;
-            text-decoration: none;
-            display: inline-block;
         }
 
         .center-box .cta-button:hover {
-            background-color: #b71c1c;
+            background-color: #006624;
         }
 
+
         .footer-text a {
-            color: #fff;
+            color: #fff; 
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -94,20 +125,25 @@
         }
     </style>
 </head>
-
 <body>
     <div class="bg"></div>
     <div class="content">
         <div class="center-box">
-            <h1>CORSINHA STORE</h1>
-            <p class="subtitle">A verificação é essencial para garantirmos a segurança no servidor e proteger nossos usuários. Com essa medida, evitamos a entrada de bots, assegurando que apenas pessoas reais entrem.</p>
-            <a href="https://discord.gg/corsinhastore" class="cta-button">Ir para o servidor</a>
+            <div class="success-box">
+                <img src="https://media.discordapp.net/attachments/1208586056652562434/1254231367047315526/verify.png?ex=6678bd7c&is=66776bfc&hm=bf0cd4dfac2b271cb45274ebbbe0417723df84c588b6e7d122d7e4d4983193a5&=&format=webp&quality=lossless&width=460&height=460" alt="Ícone de sucesso">
+                <div class="text">
+                    <h2>Sucesso</h2>
+                    <p>Você foi verificado com sucesso no servidor</p>
+                </div>
+            </div>
+            
+            <h1>Corsinha Store</h1>
+            <p class="subtitle">a verificação é essencial para garantirmos a segurança no servidor e proteger nossos usuários. com essa medida, evitamos a entrada de bots, assegurando que apenas pessoas reais entrem.</p>
+            <img src="https://cdn.discordapp.com/icons/1256646095329693839/fb457bc0b756d5a451a732d91f903711.png            <button class="cta-button">Não clique aqui</button>
         </div>
         <div class="footer-text">
-            <a href="https://discord.com/invite/posse">Developed by Corsinha Store</a>
+            <a href="https://discord.gg/hmQAaZhkhE">Developed by Corsinha Store</a>
         </div>
     </div>
 </body>
-
 </html>
-
